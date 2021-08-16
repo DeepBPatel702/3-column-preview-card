@@ -1,4 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+root{
+--clr-brightOrange: #e38826;
+--clr-darkCyan: #006970;
+--clr-veryDarkCyan: #004241;
+--clr-transparent-white : #ffffff;
+--clr-veryLightGray : #f2f2f2;
+}
+
+html{
+  font-size: 15px;
+}
 
 * {
   margin: 0;
@@ -7,5 +20,32 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Lexend Deca', sans-serif;
+  font-family: 'Big Shoulders Display', cursive;
+  color: var(--clr-brightOrange);
 }
+
+h1{
+  color: var(--clr-brightOrange);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*attribution*/
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
