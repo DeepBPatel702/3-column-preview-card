@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
 
-root{
---clr-brightOrange: #e38826;
---clr-darkCyan: #006970;
---clr-veryDarkCyan: #004241;
---clr-transparent-white : #ffffff;
---clr-veryLightGray : #f2f2f2;
+:root{
+  --clr-bright-orange: #e38826; 
+  --clr-dark-cyan: #006970;
+  --clr-veryDarkCyan: #004241;
+  --clr-transparent-white : #ffffff;
+  --clr-veryLightGray : #f2f2f2;
 }
 
 html{
@@ -15,27 +15,134 @@ html{
 
 * {
   margin: 0;
-  padding: 0;
+  padding: 1.3rem;
   box-sizing: border-box;
 }
 
 body {
   font-family: 'Lexend Deca', sans-serif;
-  font-family: 'Big Shoulders Display', cursive;
-  color: var(--clr-brightOrange);
 }
 
 h1{
   color: var(--clr-brightOrange);
 }
 
+h3{
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
 
+p{
+  font-size: 1rem;
+  line-height: 1.6;
+}
 
+.container{
+  padding: 20px;
+}
 
+.card{
+  padding: 20px;
+}
 
+.orange{
+  background-color: var(--clr-bright-orange);
+  color: var(--clr-transparent-white);
+}
 
+.cyan{
+  background-color: var(--clr-dark-cyan);
+  color: var(--clr-transparent-white);
+}
 
+.dark-cyan{
+  background-color: var(--clr-veryDarkCyan);
+  color: var(--clr-transparent-white);
+  border-radius: 0 0 10px 10px;
+}
 
+.card img{
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.card h3{
+  margin-bottom: 20px;
+}
+
+.card p{
+  margin-bottom: 30px;
+}
+
+.btn{
+  background-color: var(--clr-transparent-white);
+  border: 2px solid var(--clr-transparent-white);
+  border-radius: 1rem ;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.orange .btn{
+  color: var(--clr-bright-orange);
+}
+
+.orange .btn:hover{
+  border: 2px solid white;
+  background-color: var(--clr-bright-orange);
+  color: white;
+}
+
+.cyan .btn{
+  color: var(--clr-dark-cyan);
+}
+
+.cyan .btn:hover{
+  border: 2px solid white;
+  background-color: var(--clr-dark-cyan);
+  color: white;
+}
+.dark-cyan .btn{
+  color: var(--clr-veryDarkCyan);
+}
+
+.dark-cyan .btn:hover{
+  border: 2px solid white;
+  background-color: var(--clr-veryDarkCyan);
+  color: white;
+}
+
+@media(min-width:  991px){
+  .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    min-width: 900px;
+    margin: auto;
+  }
+
+  .orange{
+    border-radius: 10px 0 0 10px;
+  }
+
+  .dark-cyan{
+    border-radius: 0 10px 10px 0 ;
+  }
+
+  .card{
+    padding: 3rem;
+  }
+
+  .card p{
+    margin-bottom: 4.5rem;
+  }
+
+  *{
+    padding: 0;
+  }
+}
 
 
 
